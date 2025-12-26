@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل کاربر</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/customcss/style.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+</head>
+<body>
+<!----- Start header ----->
+    <header class="bg-white">
+        <div class="container">
+            <div class="row pb-3">
+
+                <div class="d-none d-lg-block col-lg-2">
+                    <img src="images/logo.jpg" alt="EasyLearn" title="EasyLearn" class="img-fluid">
+                </div>
+
+                <div class="d-none d-lg-flex col-lg-6 align-items-center search-box">
+                    <form action="" method="">
+                        <div class="input-group">
+                            <input type="search" name="" class="form-control rounded-pill" placeholder="عنوان مورد نظر خود را جستجو کنید ...">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-info rounded-pill font-13">جستجو</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="d-none d-lg-flex col-lg-4 align-items-center justify-content-end">
+                    <a href="#" class="cart mt-2 ml-2 dropdown" data-toggle="dropdown"><span class="badge badge-info badge-pill">2</span><i class="fa fa-shopping-basket"></i>
+                        <div class="dropdown-menu dropdown-cart mt-3">
+                            <ul class="list-unstyled">
+                                <li><img src="images/bootstrap.jpg" class="m-1 ml-3">
+                                    <div class="float-right">
+                                        <small class=" mt-3 mr-2 d-block">آموزش جامع Bootstrap 4 (64.000 تومان)</small>
+                                    </div>
+                                </li>
+                                <li><img src="images/php-security-2.png" class="m-1 ml-3">
+                                    <div class="float-right">
+                                        <small class=" mt-3 mr-2 d-block">آموزش امنیت در PHP (64.000 تومان)</small>
+                                    </div>
+                                </li>
+                                <li><button class="btn btn-info m-1 ml-3 font-12">پرداخت</button>
+                                    <div class="float-right">
+                                        <small class=" mt-3 mr-2 d-block">قیمت کل : 128.000 تومان</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>  
+                    </a>
+                    <a href="sign-up.html" class="btn btn-outline-info font-13 vazir-med-fa"><i class="fa fa-user-plus pl-1"></i>ثبت نام</a>
+                    <a href="login.html" class="btn btn-info font-13 vazir-med-fa mx-2">ورود</a>
+                    <a href="teach.html" class="btn btn-primary font-13 vazir-med-fa">مدرس شوید</a>
+                </div>
+
+            </div>
+
+            <div class="row"><!----- Start mobile header ----->
+
+                <div class="col-12 d-flex d-lg-none justify-content-center">
+                    <img src="images/logo.jpg" alt="Easylearn" alt="Easylearn">
+                </div>
+
+                <div class="col-12 d-flex d-lg-none justify-content-center mb-4 mobile-header">
+                    <a href="sign-up.html" class="border-left ml-3"><i class="fa fa-user-plus ml-3"></i></a>
+                    <a href="login.html" class="border-left ml-3"><i class="fa fa-lock ml-3"></i></a>
+                    <a href="teach.html" class="border-left ml-3"><i class="fa fa-graduation-cap ml-3"></i></a>
+                    <a href="#" class="border-left ml-3 dropdown" data-toggle="dropdown"><span class="badge badge-info badge-pill">2</span><i class="fa fa-shopping-basket ml-3"></i>
+                        <div class="dropdown-menu  dropdown-cart mt-3 mx-5">
+                            <ul class="list-unstyled">
+                                <li><img src="images/bootstrap.jpg" class="m-1 ml-3">
+                                    <div class="float-right">
+                                        <small class=" mt-3 mr-2 d-block">آموزش جامع Bootstrap 4 (64.000 تومان)</small>
+                                    </div>
+                                </li>
+                                <li><img src="images/php-security-2.png" class="m-1 ml-3">
+                                    <div class="float-right">
+                                        <small class=" mt-3 mr-2 d-block">آموزش امنیت در PHP (64.000 تومان)</small>
+                                    </div>
+                                </li>
+                                <li><button class="btn btn-info m-1 ml-3 font-12">پرداخت</button>
+                                    <div class="float-right">
+                                        <small class=" mt-3 mr-2 d-block">قیمت کل : 128.000 تومان</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="#search" data-toggle="collapse"><i class="fa fa-search"></i></a>
+                </div>
+
+                <div id="search" class=" d-lg-none col-10 mx-auto collapse mb-4 justify-content-center">
+                    <form action="" method="">
+                        <div class="input-group">
+                            <input type="search" name="" class="form-control rounded-pill" placeholder="عنوان مورد نظر خود را جستجو کنید ...">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-info rounded-pill font-13">جستجو</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div><!----- End mobile header ----->
+        </div>
+    </header>
+    <!----- End header ----->
+
+    <!----- Start menu ----->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm sticky-top">
+
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav pr-0 custom-navbar font-14 text-center">
+                    <li class="nav-item ml-3 custom-nav-item"><a href="index.html" class="nav-link">صفحه اصلی</a></li>
+                    <li class="nav-item ml-3 dropdown custom-nav-item"><a href="#" class="nav-link  dropdown-toggle" data-toggle="dropdown">دوره های آموزشی</a>
+
+                        <div class="dropdown-menu custom-dropdown-menu dropdown-menu-right font-13 text-right">
+                            <a href="course.html" class="dropdown-item border-bottom py-2">دوره متخصص طراحی سایت</a>
+                            <a href="course.html" class="dropdown-item border-bottom py-2">دوره آموزش برنامه نویسی اندروید</a>
+                            <a href="course.html" class="dropdown-item border-bottom py-2">دوره  جامع آموزش فتوشاپ</a>
+                            <a href="course.html" class="dropdown-item border-bottom py-2">دوره آموزش پایتون</a>
+                            <a href="course.html" class="dropdown-item py-2">دوره جامع آموزش وردپرس</a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item ml-3 dropdown custom-nav-item"><a href="#" class="nav-link  dropdown-toggle" data-toggle="dropdown">صفحات</a>
+
+                        <div class="dropdown-menu  custom-dropdown-menu dropdown-menu-right font-13 text-right">
+                            <a href="panel-user.html" class="dropdown-item border-bottom py-2">پنل کاربری</a>
+                            <a href="search.html" class="dropdown-item border-bottom py-2">جستجو</a>
+                            <a href="error404.html" class="dropdown-item py-2">Error 404</a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item ml-3 custom-nav-item"><a href="blog.html" class="nav-link">بلاگ</a></li>
+                    <li class="nav-item ml-3 custom-nav-item"><a href="contact-us.html" class="nav-link">تماس باما</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!----- End menu ----->
+
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 col-lg-3">
+                <div class="card bg-info my-5 p-5">
+                    <img src="images/user.png" class="img-fluid rounded-circle d-block mx-auto" width="120px" height="120px" alt="user-image" >
+                    <h5 class="text-white text-center mt-3">کاربر : علی نوروزی</h5>
+                </div>
+                <div class="text-right">
+                    <div class="list-group p-0 mb-5 profile" >
+                        <a href="#vaziyat" class="active list-group-item list-group-item-action font-14" data-toggle="list"> <i class="fa fa-cog align-middle ml-2" ></i>مرور وضعیت </a>
+                        <a href="#dore-signup" class="list-group-item list-group-item-action" data-toggle="list"> <i class="fa fa-server  align-middle ml-2"></i>دوره هایی که ثبت نام کرده اید </a>
+                        <a href="#shopping-cart" class="list-group-item list-group-item-action " data-toggle="list"><i class="fa fa-shopping-cart align-middle ml-2" ></i>سبد خرید </a>
+                        <a href="#ticket" class="list-group-item list-group-item-action " data-toggle="list"><i class="fa fa-tags align-middle ml-2" ></i>تیکت ها </a>
+                        <a href="#user-change" class="list-group-item list-group-item-action" data-toggle="list"><i class="fa fa-address-card align-middle ml-2"></i> تغییر مشخصات  </a>
+                        <a href="index.html" class="list-group-item list-group-item-action"> <i class=" fa fa-window-close align-middle ml-2"></i> خروج</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-9">
+
+                <div class="tab-content">
+
+                    <div class="tab-pane fade show active" id="vaziyat"><!----- Start vaziyat ----->
+                        <div class="card my-5 pb-4 text-right">
+                            <div class="card-header text-center">
+                                <h6 class="mt-2"> مرور وضعیت </h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="card mb-2">
+                                            <div class="card-body d-flex justify-content-between align-items-center">
+                                                <img src="images/university-campus.png" class="img-fluid d-inline-block p-2 rounded bg-warning" alt="courses">
+                                                <div class="d-inline-block text-center">
+                                                    <p class="mb-0"> 12 دوره  </p>
+                                                    <small> در سایت وجود دارد </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="card mb-2">
+                                            <div class="card-body d-flex justify-content-between align-items-center">
+                                                <img src="images/a.png" class="img-fluid d-inline-block p-2 rounded bg-warning" alt="courses">
+                                                <div class="d-inline-block text-center">
+                                                    <p class="mb-0"> 3 دوره  </p>
+                                                    <small> ثبت نام کرده اید </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="card mb-2">
+                                            <div class="card-body d-flex justify-content-between align-items-center">
+                                                <img src="images/shopping-cart.png" class="img-fluid d-inline-block p-2 rounded bg-warning" alt="courses">
+                                                <div class="d-inline-block text-center">
+                                                    <p class="mb-0"> 0 دوره  </p>
+                                                    <small>  در انتظار پرداخت  </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="card mb-2">
+                                            <div class="card-body d-flex justify-content-between align-items-center">
+                                                <img src="images/wallet-filled-money-tool.png" class="img-fluid d-inline-block p-2 rounded bg-warning" alt="courses">
+                                                <div class="d-inline-block text-center">
+                                                    <p class="mb-0">  0 تومان   </p>
+                                                    <small>  موجودی قابل تسویه شما  </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="card mt-3">
+                                            <div class="card-body bg-light">
+                                                <p class="mb-2"> <i class="fa fa-bell align-middle"></i>  جدیدترین اعلان ها  </p>
+                                                <small> در تاریخ 1398/01/25 </small>
+                                                <div class="alert alert-info mt-3">
+                                                    <p class="font-13 text-center mt-3">کد تخفیف 30 % : Takhfif</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div><!----- End vaziyat ----->
+
+
+                    <div class="tab-pane fade show text-center" id="dore-signup"><!----- Start dore signup ----->
+                        <div class="card my-5 pb-4 text-center">
+                            <div class="card-header">
+                                <h6 class="mt-2 font-14"> دوره هایی که ثبت نام کرده اید  </h6>
+                            </div>
+                            <div class="card-body">
+
+                                <div class="card mb-3 pb-4 shadow-sm">
+                                    <div class="card-body d-md-flex">
+                                        <img src="images/html-2.png" class="img-fluid float-lg-right mb-2" alt="html" width="250px" height="300px">
+                                        <div class="d-inline-block pr-3 text-justify my-course">
+                                            <a href="Category.html" class="mb-3 d-block text-center text-dark">آموزش HTML</a>
+                                            <small>
+                                                بخش اول متخصص طراحی سایت :
+                                                زبان نشانه گذاری HTML به عنوان اولین پایه برای هر دوره آموزش طراحی سایت در نظر گرفته می‌شود.
+                                                 این زبان چیست و چه کاربردی دارد؟ HTML مخفف عبارت Hypertext Markup Language است.
+                                             </small>
+                                             <button class="btn btn-primary rounded-pill float-left mt-3 font-12" data-toggle="collapse" data-target="#download1">مشاهده لینک دانلود</button>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="mt-5 collapse" id="download1" >
+                                        <table class="table table-borderless text-right font-13">
+                                            <tr>
+                                                <td>آموزش HTML جلسه 1 - 3</td>
+                                                <td><button class="btn btn-success float-left font-12"><i class="fa fa-download align-middle ml-2"></i>دانلود</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>آموزش HTML جلسه 3 - 6</td>
+                                                <td><button class="btn btn-success float-left font-12"><i class="fa fa-download align-middle ml-2"></i>دانلود</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>آموزش HTML جلسه 7 - 10</td>
+                                                <td><button class="btn btn-success float-left font-12"><i class="fa fa-download align-middle ml-2"></i>دانلود</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>آموزش HTML جلسه 11 - 13</td>
+                                                <td><button class="btn btn-success float-left font-12"><i class="fa fa-download align-middle ml-2"></i>دانلود</button></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-3 pb-4 shadow-sm">
+                                    <div class="card-body d-md-flex">
+                                        <img src="images/html-2.png" class="img-fluid float-lg-right mb-2" alt="html" width="250px" height="300px">
+                                        <div class="d-inline-block pr-3 text-justify my-course">
+                                            <a href="Category.html" class="mb-3 d-block text-center text-dark">آموزش HTML</a>
+                                            <small>
+                                                بخش اول متخصص طراحی سایت :
+                                                زبان نشانه گذاری HTML به عنوان اولین پایه برای هر دوره آموزش طراحی سایت در نظر گرفته می‌شود.
+                                                 این زبان چیست و چه کاربردی دارد؟ HTML مخفف عبارت Hypertext Markup Language است.
+                                             </small>
+                                             <button class="btn btn-primary rounded-pill float-left mt-3 font-12" data-toggle="collapse" data-target="#download2">مشاهده لینک دانلود</button>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="mt-5 collapse" id="download2">
+                                        <table class="table table-borderless text-right font-13">
+                                            <tr>
+                                                <td>آموزش HTML جلسه 1 - 3</td>
+                                                <td><button class="btn btn-success float-left font-12"><i class="fa fa-download align-middle ml-2"></i>دانلود</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>آموزش HTML جلسه 3 - 6</td>
+                                                <td><button class="btn btn-success float-left font-12"><i class="fa fa-download align-middle ml-2"></i>دانلود</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>آموزش HTML جلسه 7 - 10</td>
+                                                <td><button class="btn btn-success float-left font-12"><i class="fa fa-download align-middle ml-2"></i>دانلود</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>آموزش HTML جلسه 11 - 13</td>
+                                                <td><button class="btn btn-success float-left font-12"><i class="fa fa-download align-middle ml-2"></i>دانلود</button></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+                                <div class="card mb-3 pb-4 shadow-sm">
+                                    <div class="card-body d-md-flex">
+                                        <img src="images/html-2.png" class="img-fluid float-lg-right mb-2" alt="html" width="250px" height="300px">
+                                        <div class="d-inline-block pr-3 text-justify my-course">
+                                            <a href="Category.html" class="mb-3 d-block text-center text-dark">آموزش HTML</a>
+                                            <small>
+                                                بخش اول متخصص طراحی سایت :
+                                                زبان نشانه گذاری HTML به عنوان اولین پایه برای هر دوره آموزش طراحی سایت در نظر گرفته می‌شود.
+                                                 این زبان چیست و چه کاربردی دارد؟ HTML مخفف عبارت Hypertext Markup Language است.
+                                             </small>
+                                             <button class="btn btn-primary rounded-pill float-left mt-3 font-12" data-toggle="collapse" data-target="#download3">مشاهده لینک دانلود</button>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="mt-5 collapse" id="download3">
+                                        <table class="table table-borderless text-right font-13">
+                                            <tr>
+                                                <td>آموزش HTML جلسه 1 - 3</td>
+                                                <td><button class="btn btn-success float-left font-12"><i class="fa fa-download align-middle ml-2"></i>دانلود</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>آموزش HTML جلسه 3 - 6</td>
+                                                <td><button class="btn btn-success float-left font-12"><i class="fa fa-download align-middle ml-2"></i>دانلود</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>آموزش HTML جلسه 7 - 10</td>
+                                                <td><button class="btn btn-success float-left font-12"><i class="fa fa-download align-middle ml-2"></i>دانلود</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>آموزش HTML جلسه 11 - 13</td>
+                                                <td><button class="btn btn-success float-left font-12"><i class="fa fa-download align-middle ml-2"></i>دانلود</button></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                               
+
+                            </div>
+                        </div>
+                    </div><!----- End dore signup ----->
+
+
+                    <div class="tab-pane fade show text-center" id="shopping-cart"><!----- Start shopping cart----->
+
+                        <div class="card my-5 pb-4 text-center">
+
+                            <div class="card-header">
+                                <h6>سبد خرید</h6>
+                            </div>
+
+                            <div class="card-body mt-5">
+
+                                <div class="table-responsive">
+                                    <table id="myTable" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>عکس</th>
+                                                <th>نام دوره</th>
+                                                <th>تعداد</th>
+                                                <th>قیمت دوره</th>
+                                                <th class="text-right"><span id="amount" class="amount">قیمت کل</span> </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="product-img">
+                                                        <div class="img-prdct"><img src="images/bootstrap.jpg"></div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p>آموزش جامع Bootstrap 4</p>
+                                                </td>
+                                                <td>
+                                                    <div class="button-container">
+                                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                        <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input type="text" value="64000" class="price form-control" disabled>
+                                                </td>
+                                                <td> <span id="amount" class="amount">0</span>تومان</td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="product-img">
+                                                        <div class="img-prdct"><img src="images/php-security-2.png"></div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p>آموزش امنیت در PHP</p>
+                                                </td>
+                                                <td>
+                                                    <div class="button-container">
+                                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                        <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input type="text" value="64000" class="price form-control" disabled>
+                                                </td>
+                                                <td><span id="amount" class="amount">0</span>تومان</td>
+
+                                            </tr>
+                                                      
+                                        </tbody>
+                                  </table>
+
+                                  <span class="font-13">قیمت کل :</span><span id="total" class="total mx-2">0</span><span class="font-13">تومان</span>
+
+                                  <button class="btn btn-success btn-block mt-3 font-14"> پرداخت</button>
+
+                                </div>
+                                
+                            </div>
+
+                            
+                        </div>
+                                    
+                    </div><!----- End shopping cart ----->
+
+                    <div class="tab-pane fade show " id="ticket"><!----- Start ticket ----->
+                        <div class="card my-5">
+                            <div class="card-header text-center">
+                                <h6 class="mt-2 font-14"> تیکت های شما </h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="title"  class="text-right">عنوان</label>
+                                                <input id="title" class="form-control" type="text" name="" placeholder="عنوان مورد نظر خود را وارد کنید ...">
+                                            </div>
+    
+                                            <div class="form-group">
+                                                <label for="text">متن پیام</label>
+                                                <textarea id="text" class="form-control" name="" rows="3" placeholder="پیام خود را وارد کنید ..."></textarea>
+                                            </div>
+                                            
+                                            <button type="submit" class="btn btn-info btn-block font-13">ارسال تیکت</button>
+                                        </form>
+
+                                        <p class="font-14 my-5">لیست تیکت های شما :</p>
+
+                                        <div class="alert alert-warning">
+                                            <p class="font-13 vazir mt-3">تاکنون تیکتی برای شما ثبت نشده است !</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!----- End ticket ----->
+
+
+                    <div class="tab-pane fade show text-right" id="user-change"><!----- Start user change ----->
+                        <div class="card my-5">
+                            <div class="card-header">
+                                <h6 class="mt-2 font-14 text-center"> مشخصات کاربری </h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="card text-right my-3">
+                                    <div class="card-header bg-primary text-center pb-0 text-white">
+                                        <p class="font-13"> مشخصات کاربری شما : </p>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <p> نام : </p>
+                                                <input type="text" class="form-control" value="علی">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <p> نام خانوادگی : </p>
+                                                <input type="text" class="form-control" value="نوروزی">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <p> رمز عبور : </p>
+                                                <input type="password" class="form-control" value="123456789">
+                                            </div>
+
+                                            <div class="custom-file my-4">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">انتخاب عکس</label>
+                                              </div>
+
+                                            <div class="form-group">
+                                                <p> نام کاربری : </p>
+                                                <input type="text" class="form-control" value="ali-nz" disabled style="cursor:no-drop">
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <p> ایمیل : </p>
+                                                <input type="email" class="form-control" value="info.alinz@yahoo.com" disabled style="cursor:no-drop">
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn btn-primary btn-block my-4 font-13"> ثبت تغییرات </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!----- End user change ----->
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    
+    <footer class="bg-white"><!----- Start footer ----->
+        <div class="container py-2">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <img src="images/logo4.jpg" alt="" class="img-fluid">
+                    <p class="text-justify font-14 vazir mb-4">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                        استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است. 
+                    </p>
+                    <p class="font-14"><i class="fas fa-map-marker-alt text-muted ml-2"></i> ایران , تهران , زعفرانیه , ساختمان مهر</p>
+                    <p class="font-14"><i class="fas fa-envelope text-muted ml-2"></i> info@sitename.com</p>
+                    <p class="font-14"><i class="fa fa-phone text-muted ml-2"></i>021-12345678</p>
+                </div>
+
+                <div class="col-md-2 text-center footer-links">
+                    <span class="mt-5 mb-3 d-block font-14">دسترسی سریع</span>
+                    <ul class="list-unstyled">
+                        <li class="my-3"><a href="#">درباره ما</a></li>
+                        <li class="my-3"><a href="#">تماس با ما</a></li>
+                        <li class="my-3"><a href="#">سوالات متداول</a></li>
+                        <li class="my-3"><a href="#">تاریخچه سفارشات</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 text-center footer-links">
+                    <span class="mt-5 mb-3 d-block font-14">لینک های مفید</span>
+                    <ul class="list-unstyled">
+                        <li class="my-3"><a href="#">حساب کاربری</a></li>
+                        <li class="my-3"><a href="#">بازپرداخت</a></li>
+                        <li class="my-3"><a href="#">تخفیف</a></li>
+                        <li class="my-3"><a href="#">رهگیری سفارش</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 search-box text-center">
+                    <h6  class="my-5">برای اطلاع از  تازه ترین ها به خبرنامه ما بپیوندید!</h6>
+                    <form action="" method="">
+                        <div class="input-group">
+                            <input type="search" name="" class="form-control rounded-pill" placeholder="ایمیل خود را وارد کنید ...">
+                            <div class="input-group-append">
+                                <button type="submit" name="" class="btn btn-info rounded-pill font-13">اشتراک</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="mt-5 social-media">
+                        <a href="#"><i class="fab fa-instagram p-1" id="instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter bg-info p-1"></i></a>
+                        <a href="#"><i class="fab fa-youtube bg-danger p-1"></i></a>
+                        <a href="#"><i class="fab fa-telegram bg-primary p-1"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            
+			<div class="row justify-content-end">
+				<a  class="topbutton"> <i class="fa fa-chevron-circle-up"> </i> </a>
+			</div>
+            
+            
+            <div class="row">
+                <div class="col-12 text-center">
+                    <hr>
+                    <p class="text-muted font-14">© 1399 کلیه حقوق این سایت متعلق به ایزی لرن است</p>
+                </div>
+            </div>
+
+        </div>
+    </footer><!----- End footer ----->
+
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

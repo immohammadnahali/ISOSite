@@ -20,5 +20,17 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("product.urls")),
+    path('article/', include("product.urls")),
+    path('blog/', include("product.urls")),
+    path('category/', include("product.urls")),
+    path('contact_us/', include("product.urls")),
+    path('course/', include("product.urls")),
+    path('error404/', include("product.urls")),
+    path('forget_password/', include("product.urls")),
+    path('login/', include("product.urls")),
+    path('panel_user/', include("product.urls")),
+    path('search/', include("product.urls")),
+    path('sign_up/', include("product.urls")),
+    path('teach/', include("product.urls")),
 
 ]

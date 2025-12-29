@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %}ISOSite{% endblock %}</title>
+
+    <!-- CSS عمومی سایت -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/carousel/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/carousel/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap-rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/customcss/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome/css/all.css' %}">
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+    {% include 'partials/header.html' %}
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    {% include 'partials/footer.html' %}
+
+    <!-- JS عمومی سایت -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/myscript.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

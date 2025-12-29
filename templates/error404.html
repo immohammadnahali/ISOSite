@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap-rtl.css">
-    <link rel="stylesheet" href="css/fontawesome/css/all.css" >
-    <link rel="stylesheet" href="css/customcss/style.css">
-</head>
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+{% block title %}error404 | ISOSite{% endblock %}
+
+{% block content %}
+  
 <body class="bg-white">
    
 <div class="container-fluid">
@@ -20,14 +20,7 @@
     </div>
 </div>
 
-
-
-
-
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/myscript.js"></script>
 </body>
 </html>
+
+{% endblock content %}

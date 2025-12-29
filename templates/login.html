@@ -1,14 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Login | ISOSite{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ورود</title>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap-rtl.css">
-    <link rel="stylesheet" href="css/customcss/style.css">
-    <link rel="stylesheet" href="css/fontawesome/css/all.css">
-</head>
+
 <body>
     <div class="container"><!----- Start login box ----->
         <div class="row d-flex justify-content-center">
@@ -50,9 +53,9 @@
 
                             <button type="submit" class="btn btn-primary btn-block rounded-pill custom-btn font-13 my-3">ورود </button>
                             
-                            <p class="text-center my-3  font-12 vazir">رمز عبور خود را فراموش کرده اید؟ <a href="forget-password.html" class="login">بازیابی رمز عبور</a></p>
+                            <p class="text-center my-3  font-12 vazir">رمز عبور خود را فراموش کرده اید؟ <a href="forget_password.html" class="login">بازیابی رمز عبور</a></p>
                             
-                            <p class="text-center my-3  font-12 vazir">هنوز در سایت ثبت نام نکرده اید ؟ <a href="sign-up.html" class="login">ثبت نام</a></p>
+                            <p class="text-center my-3  font-12 vazir">هنوز در سایت ثبت نام نکرده اید ؟ <a href="sign_up.html" class="login">ثبت نام</a></p>
 
                         </form>
                        
@@ -64,9 +67,6 @@
     </div><!----- End login box ----->
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/myscript.js"></script>
-</body>
-</html>
+{% endblock %}
+
+

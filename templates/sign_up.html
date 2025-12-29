@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ثبت نام </title>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap-rtl.css">
-    <link rel="stylesheet" href="css/customcss/style.css">
-    <link rel="stylesheet" href="css/fontawesome/css/all.css">
-</head>
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+{% block title %}sing_up | ISOSite{% endblock %}
+
+{% block content %}
+
+
+
 <body>
     <!----- Start sign up box ----->
     <div class="container">
@@ -88,9 +89,7 @@
     <!----- End sign up box ----->
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/myscript.js"></script>
 </body>
 </html>
+
+{% endblock content %}
